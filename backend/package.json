@@ -1,0 +1,38 @@
+{
+  "name": "cv-chat-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for CV chat and email notifications",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "frontend:dev": "cd frontend && npm run dev",
+    "frontend:build": "cd frontend && npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0",
+    "cheerio": "^1.0.0-rc.12",
+    "mammoth": "^1.6.0",
+    "nodemailer": "^6.9.7",
+    "pdf-parse": "^1.1.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/nodemailer": "^6.4.14",
+    "@types/pdf-parse": "^1.1.5",
+    "tsx": "^4.6.0",
+    "typescript": "^5.3.0"
+  },
+  "keywords": [
+    "mcp",
+    "cv",
+    "resume",
+    "email",
+    "chat"
+  ],
+  "author": "",
+  "license": "MIT"
+}
